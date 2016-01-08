@@ -76,3 +76,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vr.marlin
 
+# Tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
+
