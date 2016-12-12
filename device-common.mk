@@ -488,4 +488,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # These modules won't sanitize correctly with newer clang.
 $(call add-product-sanitizer-module-config,fec,never)
+$(call add-product-sanitizer-module-config,libfec_rs_host,never)
 $(call add-product-sanitizer-module-config,libfec_host,never)
