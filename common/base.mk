@@ -629,33 +629,33 @@ WLAN += qca_cld_wlan.ko
 FSTMAN := fstman
 FSTMAN += fstman.ini
 
-PRODUCT_PACKAGES := \
-    AccountAndSyncSettings \
-    DeskClock \
-    AlarmProvider \
-    Bluetooth \
-    Calculator \
-    Calendar \
-    Camera \
-    CellBroadcastReceiver \
-    CertInstaller \
-    DrmProvider \
-    Email \
-    Gallery2 \
-    LatinIME \
-    Mms \
-    Music \
-    Phone \
-    Provision \
-    QuickSearchBox \
-    Settings \
-    Sync \
-    SystemUI \
-    Updater \
-    CalendarProvider \
-    SyncProvider \
-    VoiceDialer \
-    VideoEditor
+#PRODUCT_PACKAGES := \
+#    AccountAndSyncSettings \
+#    DeskClock \
+#    AlarmProvider \
+#    Bluetooth \
+#    Calculator \
+#    Calendar \
+#    Camera \
+#    CellBroadcastReceiver \
+#    CertInstaller \
+#    DrmProvider \
+#    Email \
+#    Gallery2 \
+#    LatinIME \
+#    Mms \
+#    Music \
+#    Phone \
+#    Provision \
+#    QuickSearchBox \
+#    Settings \
+#    Sync \
+#    SystemUI \
+#    Updater \
+#    CalendarProvider \
+#    SyncProvider \
+#    VoiceDialer \
+#    VideoEditor
 
 
 ifneq ($(TARGET_USES_AOSP),true)
