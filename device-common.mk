@@ -473,3 +473,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Workaround for audio glitches
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.adm.buffering.ms=3
+
+# fingerprint sensor type
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fingerprint=fpc
