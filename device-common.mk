@@ -472,3 +472,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # fingerprint sensor type
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.fingerprint=fpc
+
+# mobile data provision prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.android.prov_mobiledata=false
