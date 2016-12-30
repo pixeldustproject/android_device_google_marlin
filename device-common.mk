@@ -69,6 +69,9 @@ PRODUCT_PACKAGES += fs_config_files \
 # For work around facelock issues
 PRODUCT_PACKAGES += libprotobuf-cpp-full
 
+# Update engine
+PRODUCT_PACKAGES += brillo_update_payload
+
 # Audio configuration
 USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_COPY_FILES += \
