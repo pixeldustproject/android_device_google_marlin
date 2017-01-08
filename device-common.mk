@@ -504,3 +504,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.sdcardfs=true
 
+# Camera
+PRODUCT_PACKAGES += libion
+
