@@ -42,7 +42,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, device/google/marlin/common/common64.mk)
-
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 #Android EGL implementation
 PRODUCT_PACKAGES += libGLES_android
 PRODUCT_PACKAGES += SSRestartDetector
