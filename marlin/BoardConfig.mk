@@ -213,3 +213,6 @@ TARGET_GCC_VERSION_ARM64 := 6.x
 TARGET_KERNEL_SOURCE := kernel/google/marlin
 TARGET_KERNEL_CONFIG := sharkey_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+
+# Custom ROM flags
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
