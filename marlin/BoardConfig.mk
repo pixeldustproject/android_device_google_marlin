@@ -115,7 +115,7 @@ BOARD_EGL_CFG := device/google/marlin/egl.cfg
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/google/marlin
-TARGET_KERNEL_CONFIG := pure_defconfig
+TARGET_KERNEL_CONFIG := pixeldust_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 BOARD_KERNEL_BASE        := 0x80000000
