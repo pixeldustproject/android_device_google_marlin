@@ -275,6 +275,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_AAPT_CONFIG += xlarge large
 PRODUCT_CHARACTERISTICS := nosdcard
 
+#enable SDCardFS
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.sys.sdcardfs=true
+	
 # Enable camera EIS
 # eis.enable: enables electronic image stabilization
 # is_type: sets image stabilization type
