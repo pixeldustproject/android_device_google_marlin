@@ -71,7 +71,8 @@ PRODUCT_PACKAGES += fs_config_files \
                     fs_config_dirs
 
 # Update engine
-PRODUCT_PACKAGES += brillo_update_payload
+PRODUCT_PACKAGES += brillo_update_payload \
+                    libprotobuf-cpp-full
 
 # Audio configuration
 USE_XML_AUDIO_POLICY_CONF := 1
