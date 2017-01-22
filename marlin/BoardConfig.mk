@@ -26,6 +26,11 @@ TARGET_2ND_CPU_VARIANT := krait
 
 ENABLE_CPUSETS := true
 
+# use UBER optimizations
+STRICT_ALIASING := true
+POLLY_OPTS := true
+GRAPHITE_OPTS := true
+
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := false
 TARGET_NO_RECOVERY := true
@@ -112,8 +117,7 @@ BOARD_SECCOMP_POLICY += device/google/marlin/seccomp
 BOARD_EGL_CFG := device/google/marlin/egl.cfg
 
 # Inline kernel building
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-6.x/bin/
-KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
+TARGET_GCC_VERSION_ARM64 := 6.x
 TARGET_KERNEL_SOURCE := kernel/google/marlin
 TARGET_KERNEL_CONFIG := pixeldust_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
