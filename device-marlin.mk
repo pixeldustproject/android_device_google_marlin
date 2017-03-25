@@ -76,3 +76,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vr.marlin
 
+# Snap Camera (LOS)
+PRODUCT_PACKAGES += \
+    Snap
+
