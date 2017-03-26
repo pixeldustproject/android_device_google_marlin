@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vr.marlin
 
-# Snap Camera (CAF)
+# Snap Camera (LOS)
 PRODUCT_PACKAGES += \
-    SnapdragonCamera
+    Snap
 
