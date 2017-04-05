@@ -474,6 +474,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     media.mediadrmservice.enable=true
 
+# opa prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opa.eligible_device=true
+
 # facelock props
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.black_timeout=700 \
