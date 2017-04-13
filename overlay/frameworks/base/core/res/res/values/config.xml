@@ -431,4 +431,7 @@
 
     <!-- enable doze powersaving mode -->
     <bool name="config_enableAutoPowerModes">true</bool>
+
+    <!-- enable high brightness mode -->
+    <bool name="config_supportHighBrightness">true</bool>
 </resources>
