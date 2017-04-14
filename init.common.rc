@@ -232,6 +232,13 @@ on post-fs-data
     chown system system /sys/class/devfreq/soc:qcom,gpubw/min_freq
     chmod 0660 /sys/class/devfreq/soc:qcom,gpubw/min_freq
 
+    # <-- PixelDust Tweaks BEGIN -->
+
+    # Enable High Brightness Mode
+    write /sys/devices/virtual/graphics/fb0/hbm 1
+
+    # <-- PixelDust Tweaks END -->
+
 on property:init.svc.bootanim=running
     write /sys/class/leds/wled/brightness 4095
 
