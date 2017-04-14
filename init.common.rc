@@ -248,6 +248,26 @@ on boot
     exec - root root system -- /system/bin/init.power.sh
     exec - root root system -- /system/bin/init.mid.sh
 
+    ####### PixelDust Tweaks BEGIN #######
+
+    # set CPU governor settings for big cluster
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "despair"
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "despair"
+
+    # set i/o scheduler to bfq
+    write /sys/block/sda/queue/scheduler bfq
+
+    # set GPU governor to simple_ondemand
+    write /sys/devices/soc/b00000.qcom,kgsl-3d0/devfreq/b00000.qcom,kgsl-3d0/governor simple_ondemand
+
+    # increase vibrator strength to 77 because I can :P
+    write /sys/devices/virtual/timed_output/vibrator/vib_strength 77
+
+    # set tcp congestion control algorithm to highspeed
+    write /proc/sys/net/ipv4/tcp_congestion_control highspeed
+
+    ####### PixelDust Tweaks END #######
+
     # update cpusets now that processors are up
     write /dev/cpuset/top-app/cpus 0-3
     write /dev/cpuset/foreground/cpus 0-3
