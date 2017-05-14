@@ -25,8 +25,6 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := krait
 
 STRICT_ALIASING := true
-POLLY_OPTS := true
-GRAPHITE_OPTS := true
 CLANG_O3 := true
 ENABLE_CPUSETS := true
 
