@@ -313,6 +313,9 @@
     <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
     <string name="config_dozeDoubleTapSensorType" translatable="false">com.google.sensor.double_touch</string>
 
+    <!-- Doze: should the proximity sensor (handwave / pocket mode) be used as a pulse signal. -->
+    <bool name="config_dozePulseProximity">true</bool>
+
     <!-- Specifies whether to decouple the interactive state of the device from the display on/off state. -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
