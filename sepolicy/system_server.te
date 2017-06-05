@@ -42,3 +42,5 @@ allow system_server thermal_socket:sock_file write;
 userdebug_or_eng(`
   allow system_server diag_device:chr_file rw_file_perms;
 ')
+
+allow system_server user_profile_data_file:dir r_dir_perms;

@@ -1,0 +1,1 @@
+allow untrusted_app perfd_data_file:dir search;

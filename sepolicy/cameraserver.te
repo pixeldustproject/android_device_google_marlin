@@ -34,3 +34,5 @@ qmux_socket(cameraserver)
 # allow cameraserver to call some socket ioctls
 allowxperm cameraserver self:socket ioctl { IPC_ROUTER_IOCTL_LOOKUP_SERVER IPC_ROUTER_IOCTL_BIND_CONTROL_PORT };
 
+allow cameraserver graphics_device:dir search;
+
