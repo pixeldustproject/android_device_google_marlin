@@ -111,7 +111,7 @@ BOARD_SECCOMP_POLICY += device/google/marlin/seccomp
 BOARD_EGL_CFG := device/google/marlin/egl.cfg
 
 # Inline kernel building
-TARGET_GCC_VERSION_ARM64 := 6.x
+TARGET_GCC_VERSION_ARM64 := 8.x
 TARGET_KERNEL_SOURCE := kernel/google/marlin
 TARGET_KERNEL_CONFIG := pissel_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
