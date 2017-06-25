@@ -257,8 +257,9 @@ on boot
     # set i/o scheduler to maple
     write /sys/block/sda/queue/scheduler maple
 
-    # set GPU governor to simple_ondemand
-    write /sys/devices/soc/b00000.qcom,kgsl-3d0/devfreq/b00000.qcom,kgsl-3d0/governor simple_ondemand
+    # set GPU governor to MSM-Adreno-tz
+    write /sys/devices/soc/b00000.qcom,kgsl-3d0/devfreq/b00000.qcom,kgsl-3d0/governor msm-adreno-tz
+    write /sys/module/adreno_idler/parameters/adreno_idler_active Y
 
     # increase vibrator strength to 77 because I can :P
     write /sys/devices/virtual/timed_output/vibrator/vib_strength 77
