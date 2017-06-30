@@ -254,8 +254,9 @@ on boot
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "schedutil"
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "schedutil"
 
-    # set i/o scheduler to maple
-    write /sys/block/sda/queue/scheduler maple
+    # set i/o scheduler to zen
+    write /sys/block/sda/queue/scheduler zen
+    write /sys/block/sda/queue/read_ahead_kb 1024
 
     # set GPU governor to MSM-Adreno-tz
     write /sys/devices/soc/b00000.qcom,kgsl-3d0/devfreq/b00000.qcom,kgsl-3d0/governor msm-adreno-tz
