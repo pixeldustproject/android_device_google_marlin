@@ -265,9 +265,6 @@ on boot
     # increase vibrator strength to 77 because I can :P
     write /sys/devices/virtual/timed_output/vibrator/vib_strength 77
 
-    # set tcp congestion control algorithm to highspeed
-    write /proc/sys/net/ipv4/tcp_congestion_control highspeed
-
     ####### PixelDust Tweaks END #######
 
     # update cpusets now that processors are up
