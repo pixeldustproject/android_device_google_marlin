@@ -18,16 +18,7 @@
 #
 # Everything in this directory will become public
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/google/marlin-kernel/Image.gz-dtb
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 PRODUCT_SHIPPING_API_LEVEL := 24
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 
 DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay
 
@@ -351,8 +342,8 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.msm8996 \
     librecovery_updater_msm \
     libsparse_static
-PRODUCT_PACKAGES += \
-    update_engine_sideload
+#PRODUCT_PACKAGES += \
+#    update_engine_sideload
 
 # Tell the system to enable copying odexes from other partition.
 PRODUCT_PACKAGES += \
